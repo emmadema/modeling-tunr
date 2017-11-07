@@ -10,12 +10,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { SongsComponent } from './src/app/songs/songs.component';
+import { SongNewComponent } from './src/app/song-new/song-new.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SongsComponent,
+    SongNewComponent
   ],
   imports: [
     BrowserModule,

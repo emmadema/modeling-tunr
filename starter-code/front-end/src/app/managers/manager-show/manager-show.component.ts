@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import  { ManagersService } from '../managers.service';
+import { ManagersService } from '../managers.service';
 
 
 @Component({
@@ -15,7 +15,7 @@ export class ManagerShowComponent implements OnInit {
   constructor(
   	private route : ActivatedRoute,
   	private managersService : ManagersService
-  	) { }
+  ) { }
 
   ngOnInit() {
   	this.route.params.forEach( param => {
@@ -26,5 +26,4 @@ export class ManagerShowComponent implements OnInit {
   		});
   	});
   }
-
 }
